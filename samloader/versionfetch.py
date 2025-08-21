@@ -18,7 +18,7 @@ def normalizevercode(vercode: str) -> str:
 def getlatestver(model: str, region: str) -> str:
     """ Get the latest firmware version code for a model and region. """
     req = requests.get("https://fota-cloud-dn.ospserver.net/firmware/" \
-        + region + "/" + model + "/version.xml" , headers={"User-Agent": "Kies2.0_FUS"})
+        + region + "/" + model + "/version.xml" , headers={"User-Agent": "Kies2.0_FUS"}, timeout=3)
     if req.status_code == 403:
         print("Error 403 : Model or region not found (403) | Or TAC is not for " + model)
         exit()
