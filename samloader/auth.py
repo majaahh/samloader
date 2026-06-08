@@ -7,8 +7,8 @@ import base64
 from Cryptodome.Cipher import AES
 
 # Constant key input values.
-KEY_1 = "vicopx7dqu06emacgpnpy8j8zwhduwlh"
-KEY_2 = "9u7qab84rpc16gvk"
+KEY_1 = "jqw2zntssasudk3zuwwx4tnqz5h3b6i4"
+KEY_2 = "ifzg4ovyl3cyl3a5"
 
 # PKCS#7 padding functions.
 pkcs_unpad = lambda d: d[:-d[-1]]
